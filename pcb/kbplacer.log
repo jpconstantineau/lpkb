@@ -1,0 +1,587 @@
+[kbplacer_plugin_action.py:65]: Plugin version: 0.12
+[kbplacer_plugin_action.py:66]: Python version: '3.11.5 (main, Aug 14 2024, 05:26:19) [MSC v.1939 64 bit (AMD64)]'
+[kbplacer_plugin_action.py:67]: KiCad version: 8.0.6 with 4.2.2 msw (phoenix) wxWidgets 3.2.6
+[kbplacer_dialog.py:585]: Language: en
+[kbplacer_plugin_action.py:75]: GUI state: {"layout_path": "C:\\personalgit\\lpkb\\keyboard-layout.json", "key_distance": [18.0, 17.0], "key_info": {"annotation_format": "CH{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 180.0, "side": "Back"}, "template_path": ""}, "enable_diode_placement": true, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Custom", "position": {"x": 8.25, "y": 1.0, "orientation": 90.0, "side": "Back"}, "template_path": ""}, "additional_elements": [{"annotation_format": "LED{}", "position_option": "Custom", "position": {"x": 0.0, "y": 4.7, "orientation": 0.0, "side": "Back"}, "template_path": ""}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0}
+[key_placer.py:361]: Set key 1U distance: 18000000/17000000
+[key_placer.py:123]: Switches by nets: defaultdict(<class 'list'>, {frozenset({'R1', 'C8'}): ['CH64'], frozenset({'R1', 'C7'}): ['CH63'], frozenset({'R1', 'C6'}): ['CH62'], frozenset({'R1', 'C5'}): ['CH61'], frozenset({'R1', 'C4'}): ['CH60'], frozenset({'R1', 'C3'}): ['CH59'], frozenset({'R1', 'C2'}): ['CH58'], frozenset({'R1', 'C1'}): ['CH57'], frozenset({'R2', 'C8'}): ['CH56'], frozenset({'C7', 'R2'}): ['CH55'], frozenset({'C6', 'R2'}): ['CH54'], frozenset({'C5', 'R2'}): ['CH53'], frozenset({'C4', 'R2'}): ['CH52'], frozenset({'C3', 'R2'}): ['CH51'], frozenset({'R2', 'C2'}): ['CH50'], frozenset({'C1', 'R2'}): ['CH49'], frozenset({'R3', 'C8'}): ['CH48'], frozenset({'R3', 'C7'}): ['CH47'], frozenset({'C6', 'R3'}): ['CH46'], frozenset({'R3', 'C5'}): ['CH45'], frozenset({'R3', 'C4'}): ['CH44'], frozenset({'R3', 'C3'}): ['CH43'], frozenset({'R3', 'C2'}): ['CH42'], frozenset({'R3', 'C1'}): ['CH41'], frozenset({'R4', 'C8'}): ['CH40'], frozenset({'C7', 'R4'}): ['CH39'], frozenset({'C6', 'R4'}): ['CH38'], frozenset({'R4', 'C5'}): ['CH37'], frozenset({'R4', 'C4'}): ['CH36'], frozenset({'R4', 'C3'}): ['CH35'], frozenset({'R4', 'C2'}): ['CH34'], frozenset({'C1', 'R4'}): ['CH33'], frozenset({'R5', 'C8'}): ['CH32'], frozenset({'C7', 'R5'}): ['CH31'], frozenset({'C6', 'R5'}): ['CH30'], frozenset({'C5', 'R5'}): ['CH29'], frozenset({'R5', 'C4'}): ['CH28'], frozenset({'R5', 'C3'}): ['CH27'], frozenset({'R5', 'C2'}): ['CH26'], frozenset({'C1', 'R5'}): ['CH25'], frozenset({'R6', 'C8'}): ['CH24'], frozenset({'R6', 'C7'}): ['CH23'], frozenset({'R6', 'C6'}): ['CH22'], frozenset({'R6', 'C5'}): ['CH21'], frozenset({'R6', 'C4'}): ['CH20'], frozenset({'R6', 'C3'}): ['CH19'], frozenset({'R6', 'C2'}): ['CH18'], frozenset({'R6', 'C1'}): ['CH17'], frozenset({'R7', 'C8'}): ['CH16'], frozenset({'C7', 'R7'}): ['CH15'], frozenset({'C6', 'R7'}): ['CH14'], frozenset({'R7', 'C5'}): ['CH13'], frozenset({'R7', 'C4'}): ['CH12'], frozenset({'R7', 'C3'}): ['CH11'], frozenset({'R7', 'C2'}): ['CH10'], frozenset({'R7', 'C1'}): ['CH9'], frozenset({'R8', 'C8'}): ['CH8'], frozenset({'R8', 'C7'}): ['CH7'], frozenset({'C6', 'R8'}): ['CH6'], frozenset({'R8', 'C5'}): ['CH5'], frozenset({'R8', 'C4'}): ['CH4'], frozenset({'R8', 'C3'}): ['CH3'], frozenset({'R8', 'C2'}): ['CH2'], frozenset({'R8', 'C1'}): ['CH1']})
+[key_placer.py:127]: Diodes by switch: {'CH64': ['D64'], 'CH63': ['D63'], 'CH62': ['D62'], 'CH61': ['D61'], 'CH60': ['D60'], 'CH59': ['D59'], 'CH58': ['D58'], 'CH57': ['D57'], 'CH56': ['D56'], 'CH55': ['D55'], 'CH54': ['D54'], 'CH53': ['D53'], 'CH52': ['D52'], 'CH51': ['D51'], 'CH50': ['D50'], 'CH49': ['D49'], 'CH48': ['D48'], 'CH47': ['D47'], 'CH46': ['D46'], 'CH45': ['D45'], 'CH44': ['D44'], 'CH43': ['D43'], 'CH42': ['D42'], 'CH41': ['D41'], 'CH40': ['D40'], 'CH39': ['D39'], 'CH38': ['D38'], 'CH37': ['D37'], 'CH36': ['D36'], 'CH35': ['D35'], 'CH34': ['D34'], 'CH33': ['D33'], 'CH32': ['D32'], 'CH31': ['D31'], 'CH30': ['D30'], 'CH29': ['D29'], 'CH28': ['D28'], 'CH27': ['D27'], 'CH26': ['D26'], 'CH25': ['D25'], 'CH24': ['D24'], 'CH23': ['D23'], 'CH22': ['D22'], 'CH21': ['D21'], 'CH20': ['D20'], 'CH19': ['D19'], 'CH18': ['D18'], 'CH17': ['D17'], 'CH16': ['D16'], 'CH15': ['D15'], 'CH14': ['D14'], 'CH13': ['D13'], 'CH12': ['D12'], 'CH11': ['D11'], 'CH10': ['D10'], 'CH9': ['D9'], 'CH8': ['D8'], 'CH7': ['D7'], 'CH6': ['D6'], 'CH5': ['D5'], 'CH4': ['D4'], 'CH3': ['D3'], 'CH2': ['D2'], 'CH1': ['D1']}
+[kle_serial.py:897]: User layout: [['Esc', '!\n1', '@\n2', '#\n3', '$\n4', '%\n5', '^\n6', '&\n7', '*\n8', '(\n9', ')\n0', '_\n-', '+\n=', {'w': 1.5}, 'Backspace'], [{'w': 1.5}, 'Tab', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', '{\n[', '}\n]', '|\n\\'], [{'x': 0.25, 'w': 1.5}, 'Caps Lock', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', ':\n;', '"\n\'', {'w': 1.5}, 'Enter'], [{'x': 0.25, 'w': 2}, 'Shift', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', '<\n,', '>\n.', '?\n/', {'w': 2}, 'Shift'], [{'x': 0.25}, 'Ctrl', 'Win', 'Alt', {'a': 7}, '', {'w': 2}, '', {'w': 2}, '', {'w': 2}, '', {'a': 4}, 'Alt', 'Win', 'Menu', 'Ctrl']]
+[key_placer.py:661]: Layout offset: (27000000, 25500000)
+[board_modifier.py:85]: Setting CH1 footprint position: (36000000, 34000000)
+[board_modifier.py:85]: Setting CH2 footprint position: (54000000, 34000000)
+[board_modifier.py:85]: Setting CH3 footprint position: (72000000, 34000000)
+[board_modifier.py:85]: Setting CH4 footprint position: (90000000, 34000000)
+[board_modifier.py:85]: Setting CH5 footprint position: (108000000, 34000000)
+[board_modifier.py:85]: Setting CH6 footprint position: (126000000, 34000000)
+[board_modifier.py:85]: Setting CH7 footprint position: (144000000, 34000000)
+[board_modifier.py:85]: Setting CH8 footprint position: (162000000, 34000000)
+[board_modifier.py:85]: Setting CH9 footprint position: (180000000, 34000000)
+[board_modifier.py:85]: Setting CH10 footprint position: (198000000, 34000000)
+[board_modifier.py:85]: Setting CH11 footprint position: (216000000, 34000000)
+[board_modifier.py:85]: Setting CH12 footprint position: (234000000, 34000000)
+[board_modifier.py:85]: Setting CH13 footprint position: (252000000, 34000000)
+[board_modifier.py:85]: Setting CH14 footprint position: (274500000, 34000000)
+[board_modifier.py:85]: Setting CH15 footprint position: (40500000, 51000000)
+[board_modifier.py:85]: Setting CH16 footprint position: (63000000, 51000000)
+[board_modifier.py:85]: Setting CH17 footprint position: (81000000, 51000000)
+[board_modifier.py:85]: Setting CH18 footprint position: (99000000, 51000000)
+[board_modifier.py:85]: Setting CH19 footprint position: (117000000, 51000000)
+[board_modifier.py:85]: Setting CH20 footprint position: (135000000, 51000000)
+[board_modifier.py:85]: Setting CH21 footprint position: (153000000, 51000000)
+[board_modifier.py:85]: Setting CH22 footprint position: (171000000, 51000000)
+[board_modifier.py:85]: Setting CH23 footprint position: (189000000, 51000000)
+[board_modifier.py:85]: Setting CH24 footprint position: (207000000, 51000000)
+[board_modifier.py:85]: Setting CH25 footprint position: (225000000, 51000000)
+[board_modifier.py:85]: Setting CH26 footprint position: (243000000, 51000000)
+[board_modifier.py:85]: Setting CH27 footprint position: (261000000, 51000000)
+[board_modifier.py:85]: Setting CH28 footprint position: (279000000, 51000000)
+[board_modifier.py:85]: Setting CH29 footprint position: (45000000, 68000000)
+[board_modifier.py:85]: Setting CH30 footprint position: (67500000, 68000000)
+[board_modifier.py:85]: Setting CH31 footprint position: (85500000, 68000000)
+[board_modifier.py:85]: Setting CH32 footprint position: (103500000, 68000000)
+[board_modifier.py:85]: Setting CH33 footprint position: (121500000, 68000000)
+[board_modifier.py:85]: Setting CH34 footprint position: (139500000, 68000000)
+[board_modifier.py:85]: Setting CH35 footprint position: (157500000, 68000000)
+[board_modifier.py:85]: Setting CH36 footprint position: (175500000, 68000000)
+[board_modifier.py:85]: Setting CH37 footprint position: (193500000, 68000000)
+[board_modifier.py:85]: Setting CH38 footprint position: (211500000, 68000000)
+[board_modifier.py:85]: Setting CH39 footprint position: (229500000, 68000000)
+[board_modifier.py:85]: Setting CH40 footprint position: (247500000, 68000000)
+[board_modifier.py:85]: Setting CH41 footprint position: (270000000, 68000000)
+[board_modifier.py:85]: Setting CH42 footprint position: (49500000, 85000000)
+[board_modifier.py:85]: Setting CH43 footprint position: (76500000, 85000000)
+[board_modifier.py:85]: Setting CH44 footprint position: (94500000, 85000000)
+[board_modifier.py:85]: Setting CH45 footprint position: (112500000, 85000000)
+[board_modifier.py:85]: Setting CH46 footprint position: (130500000, 85000000)
+[board_modifier.py:85]: Setting CH47 footprint position: (148500000, 85000000)
+[board_modifier.py:85]: Setting CH48 footprint position: (166500000, 85000000)
+[board_modifier.py:85]: Setting CH49 footprint position: (184500000, 85000000)
+[board_modifier.py:85]: Setting CH50 footprint position: (202500000, 85000000)
+[board_modifier.py:85]: Setting CH51 footprint position: (220500000, 85000000)
+[board_modifier.py:85]: Setting CH52 footprint position: (238500000, 85000000)
+[board_modifier.py:85]: Setting CH53 footprint position: (265500000, 85000000)
+[board_modifier.py:85]: Setting CH54 footprint position: (40500000, 102000000)
+[board_modifier.py:85]: Setting CH55 footprint position: (58500000, 102000000)
+[board_modifier.py:85]: Setting CH56 footprint position: (76500000, 102000000)
+[board_modifier.py:85]: Setting CH57 footprint position: (94500000, 102000000)
+[board_modifier.py:85]: Setting CH58 footprint position: (121500000, 102000000)
+[board_modifier.py:85]: Setting CH59 footprint position: (157500000, 102000000)
+[board_modifier.py:85]: Setting CH60 footprint position: (193500000, 102000000)
+[board_modifier.py:85]: Setting CH61 footprint position: (220500000, 102000000)
+[board_modifier.py:85]: Setting CH62 footprint position: (238500000, 102000000)
+[board_modifier.py:85]: Setting CH63 footprint position: (256500000, 102000000)
+[board_modifier.py:85]: Setting CH64 footprint position: (274500000, 102000000)
+[key_placer.py:996]: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.CUSTOM: 'Custom'>, position=ElementPosition(x=8.25, y=1.0, orientation=90.0, side=<Side.BACK: 'Back'>), template_path='')]
+[board_modifier.py:98]: Getting CH1 footprint position: (36000000, 34000000)
+[board_modifier.py:85]: Setting D1 footprint position: (27750000, 33000000)
+[board_modifier.py:98]: Getting D1 footprint position: (27750000, 33000000)
+[board_modifier.py:98]: Getting CH2 footprint position: (54000000, 34000000)
+[board_modifier.py:85]: Setting D2 footprint position: (45750000, 33000000)
+[board_modifier.py:98]: Getting D2 footprint position: (45750000, 33000000)
+[board_modifier.py:98]: Getting CH3 footprint position: (72000000, 34000000)
+[board_modifier.py:85]: Setting D3 footprint position: (63750000, 33000000)
+[board_modifier.py:98]: Getting D3 footprint position: (63750000, 33000000)
+[board_modifier.py:98]: Getting CH4 footprint position: (90000000, 34000000)
+[board_modifier.py:85]: Setting D4 footprint position: (81750000, 33000000)
+[board_modifier.py:98]: Getting D4 footprint position: (81750000, 33000000)
+[board_modifier.py:98]: Getting CH5 footprint position: (108000000, 34000000)
+[board_modifier.py:85]: Setting D5 footprint position: (99750000, 33000000)
+[board_modifier.py:98]: Getting D5 footprint position: (99750000, 33000000)
+[board_modifier.py:98]: Getting CH6 footprint position: (126000000, 34000000)
+[board_modifier.py:85]: Setting D6 footprint position: (117750000, 33000000)
+[board_modifier.py:98]: Getting D6 footprint position: (117750000, 33000000)
+[board_modifier.py:98]: Getting CH7 footprint position: (144000000, 34000000)
+[board_modifier.py:85]: Setting D7 footprint position: (135750000, 33000000)
+[board_modifier.py:98]: Getting D7 footprint position: (135750000, 33000000)
+[board_modifier.py:98]: Getting CH8 footprint position: (162000000, 34000000)
+[board_modifier.py:85]: Setting D8 footprint position: (153750000, 33000000)
+[board_modifier.py:98]: Getting D8 footprint position: (153750000, 33000000)
+[board_modifier.py:98]: Getting CH9 footprint position: (180000000, 34000000)
+[board_modifier.py:85]: Setting D9 footprint position: (171750000, 33000000)
+[board_modifier.py:98]: Getting D9 footprint position: (171750000, 33000000)
+[board_modifier.py:98]: Getting CH10 footprint position: (198000000, 34000000)
+[board_modifier.py:85]: Setting D10 footprint position: (189750000, 33000000)
+[board_modifier.py:98]: Getting D10 footprint position: (189750000, 33000000)
+[board_modifier.py:98]: Getting CH11 footprint position: (216000000, 34000000)
+[board_modifier.py:85]: Setting D11 footprint position: (207750000, 33000000)
+[board_modifier.py:98]: Getting D11 footprint position: (207750000, 33000000)
+[board_modifier.py:98]: Getting CH12 footprint position: (234000000, 34000000)
+[board_modifier.py:85]: Setting D12 footprint position: (225750000, 33000000)
+[board_modifier.py:98]: Getting D12 footprint position: (225750000, 33000000)
+[board_modifier.py:98]: Getting CH13 footprint position: (252000000, 34000000)
+[board_modifier.py:85]: Setting D13 footprint position: (243750000, 33000000)
+[board_modifier.py:98]: Getting D13 footprint position: (243750000, 33000000)
+[board_modifier.py:98]: Getting CH14 footprint position: (274500000, 34000000)
+[board_modifier.py:85]: Setting D14 footprint position: (266250000, 33000000)
+[board_modifier.py:98]: Getting D14 footprint position: (266250000, 33000000)
+[board_modifier.py:98]: Getting CH15 footprint position: (40500000, 51000000)
+[board_modifier.py:85]: Setting D15 footprint position: (32250000, 50000000)
+[board_modifier.py:98]: Getting D15 footprint position: (32250000, 50000000)
+[board_modifier.py:98]: Getting CH16 footprint position: (63000000, 51000000)
+[board_modifier.py:85]: Setting D16 footprint position: (54750000, 50000000)
+[board_modifier.py:98]: Getting D16 footprint position: (54750000, 50000000)
+[board_modifier.py:98]: Getting CH17 footprint position: (81000000, 51000000)
+[board_modifier.py:85]: Setting D17 footprint position: (72750000, 50000000)
+[board_modifier.py:98]: Getting D17 footprint position: (72750000, 50000000)
+[board_modifier.py:98]: Getting CH18 footprint position: (99000000, 51000000)
+[board_modifier.py:85]: Setting D18 footprint position: (90750000, 50000000)
+[board_modifier.py:98]: Getting D18 footprint position: (90750000, 50000000)
+[board_modifier.py:98]: Getting CH19 footprint position: (117000000, 51000000)
+[board_modifier.py:85]: Setting D19 footprint position: (108750000, 50000000)
+[board_modifier.py:98]: Getting D19 footprint position: (108750000, 50000000)
+[board_modifier.py:98]: Getting CH20 footprint position: (135000000, 51000000)
+[board_modifier.py:85]: Setting D20 footprint position: (126750000, 50000000)
+[board_modifier.py:98]: Getting D20 footprint position: (126750000, 50000000)
+[board_modifier.py:98]: Getting CH21 footprint position: (153000000, 51000000)
+[board_modifier.py:85]: Setting D21 footprint position: (144750000, 50000000)
+[board_modifier.py:98]: Getting D21 footprint position: (144750000, 50000000)
+[board_modifier.py:98]: Getting CH22 footprint position: (171000000, 51000000)
+[board_modifier.py:85]: Setting D22 footprint position: (162750000, 50000000)
+[board_modifier.py:98]: Getting D22 footprint position: (162750000, 50000000)
+[board_modifier.py:98]: Getting CH23 footprint position: (189000000, 51000000)
+[board_modifier.py:85]: Setting D23 footprint position: (180750000, 50000000)
+[board_modifier.py:98]: Getting D23 footprint position: (180750000, 50000000)
+[board_modifier.py:98]: Getting CH24 footprint position: (207000000, 51000000)
+[board_modifier.py:85]: Setting D24 footprint position: (198750000, 50000000)
+[board_modifier.py:98]: Getting D24 footprint position: (198750000, 50000000)
+[board_modifier.py:98]: Getting CH25 footprint position: (225000000, 51000000)
+[board_modifier.py:85]: Setting D25 footprint position: (216750000, 50000000)
+[board_modifier.py:98]: Getting D25 footprint position: (216750000, 50000000)
+[board_modifier.py:98]: Getting CH26 footprint position: (243000000, 51000000)
+[board_modifier.py:85]: Setting D26 footprint position: (234750000, 50000000)
+[board_modifier.py:98]: Getting D26 footprint position: (234750000, 50000000)
+[board_modifier.py:98]: Getting CH27 footprint position: (261000000, 51000000)
+[board_modifier.py:85]: Setting D27 footprint position: (252750000, 50000000)
+[board_modifier.py:98]: Getting D27 footprint position: (252750000, 50000000)
+[board_modifier.py:98]: Getting CH28 footprint position: (279000000, 51000000)
+[board_modifier.py:85]: Setting D28 footprint position: (270750000, 50000000)
+[board_modifier.py:98]: Getting D28 footprint position: (270750000, 50000000)
+[board_modifier.py:98]: Getting CH29 footprint position: (45000000, 68000000)
+[board_modifier.py:85]: Setting D29 footprint position: (36750000, 67000000)
+[board_modifier.py:98]: Getting D29 footprint position: (36750000, 67000000)
+[board_modifier.py:98]: Getting CH30 footprint position: (67500000, 68000000)
+[board_modifier.py:85]: Setting D30 footprint position: (59250000, 67000000)
+[board_modifier.py:98]: Getting D30 footprint position: (59250000, 67000000)
+[board_modifier.py:98]: Getting CH31 footprint position: (85500000, 68000000)
+[board_modifier.py:85]: Setting D31 footprint position: (77250000, 67000000)
+[board_modifier.py:98]: Getting D31 footprint position: (77250000, 67000000)
+[board_modifier.py:98]: Getting CH32 footprint position: (103500000, 68000000)
+[board_modifier.py:85]: Setting D32 footprint position: (95250000, 67000000)
+[board_modifier.py:98]: Getting D32 footprint position: (95250000, 67000000)
+[board_modifier.py:98]: Getting CH33 footprint position: (121500000, 68000000)
+[board_modifier.py:85]: Setting D33 footprint position: (113250000, 67000000)
+[board_modifier.py:98]: Getting D33 footprint position: (113250000, 67000000)
+[board_modifier.py:98]: Getting CH34 footprint position: (139500000, 68000000)
+[board_modifier.py:85]: Setting D34 footprint position: (131250000, 67000000)
+[board_modifier.py:98]: Getting D34 footprint position: (131250000, 67000000)
+[board_modifier.py:98]: Getting CH35 footprint position: (157500000, 68000000)
+[board_modifier.py:85]: Setting D35 footprint position: (149250000, 67000000)
+[board_modifier.py:98]: Getting D35 footprint position: (149250000, 67000000)
+[board_modifier.py:98]: Getting CH36 footprint position: (175500000, 68000000)
+[board_modifier.py:85]: Setting D36 footprint position: (167250000, 67000000)
+[board_modifier.py:98]: Getting D36 footprint position: (167250000, 67000000)
+[board_modifier.py:98]: Getting CH37 footprint position: (193500000, 68000000)
+[board_modifier.py:85]: Setting D37 footprint position: (185250000, 67000000)
+[board_modifier.py:98]: Getting D37 footprint position: (185250000, 67000000)
+[board_modifier.py:98]: Getting CH38 footprint position: (211500000, 68000000)
+[board_modifier.py:85]: Setting D38 footprint position: (203250000, 67000000)
+[board_modifier.py:98]: Getting D38 footprint position: (203250000, 67000000)
+[board_modifier.py:98]: Getting CH39 footprint position: (229500000, 68000000)
+[board_modifier.py:85]: Setting D39 footprint position: (221250000, 67000000)
+[board_modifier.py:98]: Getting D39 footprint position: (221250000, 67000000)
+[board_modifier.py:98]: Getting CH40 footprint position: (247500000, 68000000)
+[board_modifier.py:85]: Setting D40 footprint position: (239250000, 67000000)
+[board_modifier.py:98]: Getting D40 footprint position: (239250000, 67000000)
+[board_modifier.py:98]: Getting CH41 footprint position: (270000000, 68000000)
+[board_modifier.py:85]: Setting D41 footprint position: (261750000, 67000000)
+[board_modifier.py:98]: Getting D41 footprint position: (261750000, 67000000)
+[board_modifier.py:98]: Getting CH42 footprint position: (49500000, 85000000)
+[board_modifier.py:85]: Setting D42 footprint position: (41250000, 84000000)
+[board_modifier.py:98]: Getting D42 footprint position: (41250000, 84000000)
+[board_modifier.py:98]: Getting CH43 footprint position: (76500000, 85000000)
+[board_modifier.py:85]: Setting D43 footprint position: (68250000, 84000000)
+[board_modifier.py:98]: Getting D43 footprint position: (68250000, 84000000)
+[board_modifier.py:98]: Getting CH44 footprint position: (94500000, 85000000)
+[board_modifier.py:85]: Setting D44 footprint position: (86250000, 84000000)
+[board_modifier.py:98]: Getting D44 footprint position: (86250000, 84000000)
+[board_modifier.py:98]: Getting CH45 footprint position: (112500000, 85000000)
+[board_modifier.py:85]: Setting D45 footprint position: (104250000, 84000000)
+[board_modifier.py:98]: Getting D45 footprint position: (104250000, 84000000)
+[board_modifier.py:98]: Getting CH46 footprint position: (130500000, 85000000)
+[board_modifier.py:85]: Setting D46 footprint position: (122250000, 84000000)
+[board_modifier.py:98]: Getting D46 footprint position: (122250000, 84000000)
+[board_modifier.py:98]: Getting CH47 footprint position: (148500000, 85000000)
+[board_modifier.py:85]: Setting D47 footprint position: (140250000, 84000000)
+[board_modifier.py:98]: Getting D47 footprint position: (140250000, 84000000)
+[board_modifier.py:98]: Getting CH48 footprint position: (166500000, 85000000)
+[board_modifier.py:85]: Setting D48 footprint position: (158250000, 84000000)
+[board_modifier.py:98]: Getting D48 footprint position: (158250000, 84000000)
+[board_modifier.py:98]: Getting CH49 footprint position: (184500000, 85000000)
+[board_modifier.py:85]: Setting D49 footprint position: (176250000, 84000000)
+[board_modifier.py:98]: Getting D49 footprint position: (176250000, 84000000)
+[board_modifier.py:98]: Getting CH50 footprint position: (202500000, 85000000)
+[board_modifier.py:85]: Setting D50 footprint position: (194250000, 84000000)
+[board_modifier.py:98]: Getting D50 footprint position: (194250000, 84000000)
+[board_modifier.py:98]: Getting CH51 footprint position: (220500000, 85000000)
+[board_modifier.py:85]: Setting D51 footprint position: (212250000, 84000000)
+[board_modifier.py:98]: Getting D51 footprint position: (212250000, 84000000)
+[board_modifier.py:98]: Getting CH52 footprint position: (238500000, 85000000)
+[board_modifier.py:85]: Setting D52 footprint position: (230250000, 84000000)
+[board_modifier.py:98]: Getting D52 footprint position: (230250000, 84000000)
+[board_modifier.py:98]: Getting CH53 footprint position: (265500000, 85000000)
+[board_modifier.py:85]: Setting D53 footprint position: (257250000, 84000000)
+[board_modifier.py:98]: Getting D53 footprint position: (257250000, 84000000)
+[board_modifier.py:98]: Getting CH54 footprint position: (40500000, 102000000)
+[board_modifier.py:85]: Setting D54 footprint position: (32250000, 101000000)
+[board_modifier.py:98]: Getting D54 footprint position: (32250000, 101000000)
+[board_modifier.py:98]: Getting CH55 footprint position: (58500000, 102000000)
+[board_modifier.py:85]: Setting D55 footprint position: (50250000, 101000000)
+[board_modifier.py:98]: Getting D55 footprint position: (50250000, 101000000)
+[board_modifier.py:98]: Getting CH56 footprint position: (76500000, 102000000)
+[board_modifier.py:85]: Setting D56 footprint position: (68250000, 101000000)
+[board_modifier.py:98]: Getting D56 footprint position: (68250000, 101000000)
+[board_modifier.py:98]: Getting CH57 footprint position: (94500000, 102000000)
+[board_modifier.py:85]: Setting D57 footprint position: (86250000, 101000000)
+[board_modifier.py:98]: Getting D57 footprint position: (86250000, 101000000)
+[board_modifier.py:98]: Getting CH58 footprint position: (121500000, 102000000)
+[board_modifier.py:85]: Setting D58 footprint position: (113250000, 101000000)
+[board_modifier.py:98]: Getting D58 footprint position: (113250000, 101000000)
+[board_modifier.py:98]: Getting CH59 footprint position: (157500000, 102000000)
+[board_modifier.py:85]: Setting D59 footprint position: (149250000, 101000000)
+[board_modifier.py:98]: Getting D59 footprint position: (149250000, 101000000)
+[board_modifier.py:98]: Getting CH60 footprint position: (193500000, 102000000)
+[board_modifier.py:85]: Setting D60 footprint position: (185250000, 101000000)
+[board_modifier.py:98]: Getting D60 footprint position: (185250000, 101000000)
+[board_modifier.py:98]: Getting CH61 footprint position: (220500000, 102000000)
+[board_modifier.py:85]: Setting D61 footprint position: (212250000, 101000000)
+[board_modifier.py:98]: Getting D61 footprint position: (212250000, 101000000)
+[board_modifier.py:98]: Getting CH62 footprint position: (238500000, 102000000)
+[board_modifier.py:85]: Setting D62 footprint position: (230250000, 101000000)
+[board_modifier.py:98]: Getting D62 footprint position: (230250000, 101000000)
+[board_modifier.py:98]: Getting CH63 footprint position: (256500000, 102000000)
+[board_modifier.py:85]: Setting D63 footprint position: (248250000, 101000000)
+[board_modifier.py:98]: Getting D63 footprint position: (248250000, 101000000)
+[board_modifier.py:98]: Getting CH64 footprint position: (274500000, 102000000)
+[board_modifier.py:85]: Setting D64 footprint position: (266250000, 101000000)
+[board_modifier.py:98]: Getting D64 footprint position: (266250000, 101000000)
+[key_placer.py:774]: Placing additional elements for CH64
+[board_modifier.py:98]: Getting CH64 footprint position: (274500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED64 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED64 footprint position: (274500000, 97300000)
+[board_modifier.py:98]: Getting LED64 footprint position: (274500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH63
+[board_modifier.py:98]: Getting CH63 footprint position: (256500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED63 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED63 footprint position: (256500000, 97300000)
+[board_modifier.py:98]: Getting LED63 footprint position: (256500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH62
+[board_modifier.py:98]: Getting CH62 footprint position: (238500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED62 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED62 footprint position: (238500000, 97300000)
+[board_modifier.py:98]: Getting LED62 footprint position: (238500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH61
+[board_modifier.py:98]: Getting CH61 footprint position: (220500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED61 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED61 footprint position: (220500000, 97300000)
+[board_modifier.py:98]: Getting LED61 footprint position: (220500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH60
+[board_modifier.py:98]: Getting CH60 footprint position: (193500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED60 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED60 footprint position: (193500000, 97300000)
+[board_modifier.py:98]: Getting LED60 footprint position: (193500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH59
+[board_modifier.py:98]: Getting CH59 footprint position: (157500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED59 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED59 footprint position: (157500000, 97300000)
+[board_modifier.py:98]: Getting LED59 footprint position: (157500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH58
+[board_modifier.py:98]: Getting CH58 footprint position: (121500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED58 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED58 footprint position: (121500000, 97300000)
+[board_modifier.py:98]: Getting LED58 footprint position: (121500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH57
+[board_modifier.py:98]: Getting CH57 footprint position: (94500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED57 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED57 footprint position: (94500000, 97300000)
+[board_modifier.py:98]: Getting LED57 footprint position: (94500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH56
+[board_modifier.py:98]: Getting CH56 footprint position: (76500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED56 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED56 footprint position: (76500000, 97300000)
+[board_modifier.py:98]: Getting LED56 footprint position: (76500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH55
+[board_modifier.py:98]: Getting CH55 footprint position: (58500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED55 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED55 footprint position: (58500000, 97300000)
+[board_modifier.py:98]: Getting LED55 footprint position: (58500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH54
+[board_modifier.py:98]: Getting CH54 footprint position: (40500000, 102000000)
+[board_modifier.py:75]: Searching for optional LED54 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED54 footprint position: (40500000, 97300000)
+[board_modifier.py:98]: Getting LED54 footprint position: (40500000, 97300000)
+[key_placer.py:774]: Placing additional elements for CH53
+[board_modifier.py:98]: Getting CH53 footprint position: (265500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED53 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED53 footprint position: (265500000, 80300000)
+[board_modifier.py:98]: Getting LED53 footprint position: (265500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH52
+[board_modifier.py:98]: Getting CH52 footprint position: (238500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED52 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED52 footprint position: (238500000, 80300000)
+[board_modifier.py:98]: Getting LED52 footprint position: (238500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH51
+[board_modifier.py:98]: Getting CH51 footprint position: (220500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED51 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED51 footprint position: (220500000, 80300000)
+[board_modifier.py:98]: Getting LED51 footprint position: (220500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH50
+[board_modifier.py:98]: Getting CH50 footprint position: (202500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED50 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED50 footprint position: (202500000, 80300000)
+[board_modifier.py:98]: Getting LED50 footprint position: (202500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH49
+[board_modifier.py:98]: Getting CH49 footprint position: (184500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED49 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED49 footprint position: (184500000, 80300000)
+[board_modifier.py:98]: Getting LED49 footprint position: (184500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH48
+[board_modifier.py:98]: Getting CH48 footprint position: (166500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED48 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED48 footprint position: (166500000, 80300000)
+[board_modifier.py:98]: Getting LED48 footprint position: (166500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH47
+[board_modifier.py:98]: Getting CH47 footprint position: (148500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED47 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED47 footprint position: (148500000, 80300000)
+[board_modifier.py:98]: Getting LED47 footprint position: (148500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH46
+[board_modifier.py:98]: Getting CH46 footprint position: (130500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED46 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED46 footprint position: (130500000, 80300000)
+[board_modifier.py:98]: Getting LED46 footprint position: (130500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH45
+[board_modifier.py:98]: Getting CH45 footprint position: (112500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED45 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED45 footprint position: (112500000, 80300000)
+[board_modifier.py:98]: Getting LED45 footprint position: (112500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH44
+[board_modifier.py:98]: Getting CH44 footprint position: (94500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED44 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED44 footprint position: (94500000, 80300000)
+[board_modifier.py:98]: Getting LED44 footprint position: (94500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH43
+[board_modifier.py:98]: Getting CH43 footprint position: (76500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED43 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED43 footprint position: (76500000, 80300000)
+[board_modifier.py:98]: Getting LED43 footprint position: (76500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH42
+[board_modifier.py:98]: Getting CH42 footprint position: (49500000, 85000000)
+[board_modifier.py:75]: Searching for optional LED42 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED42 footprint position: (49500000, 80300000)
+[board_modifier.py:98]: Getting LED42 footprint position: (49500000, 80300000)
+[key_placer.py:774]: Placing additional elements for CH41
+[board_modifier.py:98]: Getting CH41 footprint position: (270000000, 68000000)
+[board_modifier.py:75]: Searching for optional LED41 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED41 footprint position: (270000000, 63300000)
+[board_modifier.py:98]: Getting LED41 footprint position: (270000000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH40
+[board_modifier.py:98]: Getting CH40 footprint position: (247500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED40 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED40 footprint position: (247500000, 63300000)
+[board_modifier.py:98]: Getting LED40 footprint position: (247500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH39
+[board_modifier.py:98]: Getting CH39 footprint position: (229500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED39 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED39 footprint position: (229500000, 63300000)
+[board_modifier.py:98]: Getting LED39 footprint position: (229500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH38
+[board_modifier.py:98]: Getting CH38 footprint position: (211500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED38 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED38 footprint position: (211500000, 63300000)
+[board_modifier.py:98]: Getting LED38 footprint position: (211500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH37
+[board_modifier.py:98]: Getting CH37 footprint position: (193500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED37 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED37 footprint position: (193500000, 63300000)
+[board_modifier.py:98]: Getting LED37 footprint position: (193500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH36
+[board_modifier.py:98]: Getting CH36 footprint position: (175500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED36 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED36 footprint position: (175500000, 63300000)
+[board_modifier.py:98]: Getting LED36 footprint position: (175500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH35
+[board_modifier.py:98]: Getting CH35 footprint position: (157500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED35 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED35 footprint position: (157500000, 63300000)
+[board_modifier.py:98]: Getting LED35 footprint position: (157500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH34
+[board_modifier.py:98]: Getting CH34 footprint position: (139500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED34 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED34 footprint position: (139500000, 63300000)
+[board_modifier.py:98]: Getting LED34 footprint position: (139500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH33
+[board_modifier.py:98]: Getting CH33 footprint position: (121500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED33 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED33 footprint position: (121500000, 63300000)
+[board_modifier.py:98]: Getting LED33 footprint position: (121500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH32
+[board_modifier.py:98]: Getting CH32 footprint position: (103500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED32 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED32 footprint position: (103500000, 63300000)
+[board_modifier.py:98]: Getting LED32 footprint position: (103500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH31
+[board_modifier.py:98]: Getting CH31 footprint position: (85500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED31 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED31 footprint position: (85500000, 63300000)
+[board_modifier.py:98]: Getting LED31 footprint position: (85500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH30
+[board_modifier.py:98]: Getting CH30 footprint position: (67500000, 68000000)
+[board_modifier.py:75]: Searching for optional LED30 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED30 footprint position: (67500000, 63300000)
+[board_modifier.py:98]: Getting LED30 footprint position: (67500000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH29
+[board_modifier.py:98]: Getting CH29 footprint position: (45000000, 68000000)
+[board_modifier.py:75]: Searching for optional LED29 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED29 footprint position: (45000000, 63300000)
+[board_modifier.py:98]: Getting LED29 footprint position: (45000000, 63300000)
+[key_placer.py:774]: Placing additional elements for CH28
+[board_modifier.py:98]: Getting CH28 footprint position: (279000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED28 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED28 footprint position: (279000000, 46300000)
+[board_modifier.py:98]: Getting LED28 footprint position: (279000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH27
+[board_modifier.py:98]: Getting CH27 footprint position: (261000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED27 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED27 footprint position: (261000000, 46300000)
+[board_modifier.py:98]: Getting LED27 footprint position: (261000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH26
+[board_modifier.py:98]: Getting CH26 footprint position: (243000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED26 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED26 footprint position: (243000000, 46300000)
+[board_modifier.py:98]: Getting LED26 footprint position: (243000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH25
+[board_modifier.py:98]: Getting CH25 footprint position: (225000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED25 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED25 footprint position: (225000000, 46300000)
+[board_modifier.py:98]: Getting LED25 footprint position: (225000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH24
+[board_modifier.py:98]: Getting CH24 footprint position: (207000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED24 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED24 footprint position: (207000000, 46300000)
+[board_modifier.py:98]: Getting LED24 footprint position: (207000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH23
+[board_modifier.py:98]: Getting CH23 footprint position: (189000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED23 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED23 footprint position: (189000000, 46300000)
+[board_modifier.py:98]: Getting LED23 footprint position: (189000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH22
+[board_modifier.py:98]: Getting CH22 footprint position: (171000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED22 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED22 footprint position: (171000000, 46300000)
+[board_modifier.py:98]: Getting LED22 footprint position: (171000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH21
+[board_modifier.py:98]: Getting CH21 footprint position: (153000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED21 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED21 footprint position: (153000000, 46300000)
+[board_modifier.py:98]: Getting LED21 footprint position: (153000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH20
+[board_modifier.py:98]: Getting CH20 footprint position: (135000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED20 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED20 footprint position: (135000000, 46300000)
+[board_modifier.py:98]: Getting LED20 footprint position: (135000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH19
+[board_modifier.py:98]: Getting CH19 footprint position: (117000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED19 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED19 footprint position: (117000000, 46300000)
+[board_modifier.py:98]: Getting LED19 footprint position: (117000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH18
+[board_modifier.py:98]: Getting CH18 footprint position: (99000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED18 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED18 footprint position: (99000000, 46300000)
+[board_modifier.py:98]: Getting LED18 footprint position: (99000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH17
+[board_modifier.py:98]: Getting CH17 footprint position: (81000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED17 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED17 footprint position: (81000000, 46300000)
+[board_modifier.py:98]: Getting LED17 footprint position: (81000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH16
+[board_modifier.py:98]: Getting CH16 footprint position: (63000000, 51000000)
+[board_modifier.py:75]: Searching for optional LED16 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED16 footprint position: (63000000, 46300000)
+[board_modifier.py:98]: Getting LED16 footprint position: (63000000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH15
+[board_modifier.py:98]: Getting CH15 footprint position: (40500000, 51000000)
+[board_modifier.py:75]: Searching for optional LED15 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED15 footprint position: (40500000, 46300000)
+[board_modifier.py:98]: Getting LED15 footprint position: (40500000, 46300000)
+[key_placer.py:774]: Placing additional elements for CH14
+[board_modifier.py:98]: Getting CH14 footprint position: (274500000, 34000000)
+[board_modifier.py:75]: Searching for optional LED14 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED14 footprint position: (274500000, 29300000)
+[board_modifier.py:98]: Getting LED14 footprint position: (274500000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH13
+[board_modifier.py:98]: Getting CH13 footprint position: (252000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED13 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED13 footprint position: (252000000, 29300000)
+[board_modifier.py:98]: Getting LED13 footprint position: (252000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH12
+[board_modifier.py:98]: Getting CH12 footprint position: (234000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED12 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED12 footprint position: (234000000, 29300000)
+[board_modifier.py:98]: Getting LED12 footprint position: (234000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH11
+[board_modifier.py:98]: Getting CH11 footprint position: (216000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED11 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED11 footprint position: (216000000, 29300000)
+[board_modifier.py:98]: Getting LED11 footprint position: (216000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH10
+[board_modifier.py:98]: Getting CH10 footprint position: (198000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED10 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED10 footprint position: (198000000, 29300000)
+[board_modifier.py:98]: Getting LED10 footprint position: (198000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH9
+[board_modifier.py:98]: Getting CH9 footprint position: (180000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED9 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED9 footprint position: (180000000, 29300000)
+[board_modifier.py:98]: Getting LED9 footprint position: (180000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH8
+[board_modifier.py:98]: Getting CH8 footprint position: (162000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED8 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED8 footprint position: (162000000, 29300000)
+[board_modifier.py:98]: Getting LED8 footprint position: (162000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH7
+[board_modifier.py:98]: Getting CH7 footprint position: (144000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED7 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED7 footprint position: (144000000, 29300000)
+[board_modifier.py:98]: Getting LED7 footprint position: (144000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH6
+[board_modifier.py:98]: Getting CH6 footprint position: (126000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED6 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED6 footprint position: (126000000, 29300000)
+[board_modifier.py:98]: Getting LED6 footprint position: (126000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH5
+[board_modifier.py:98]: Getting CH5 footprint position: (108000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED5 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED5 footprint position: (108000000, 29300000)
+[board_modifier.py:98]: Getting LED5 footprint position: (108000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH4
+[board_modifier.py:98]: Getting CH4 footprint position: (90000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED4 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED4 footprint position: (90000000, 29300000)
+[board_modifier.py:98]: Getting LED4 footprint position: (90000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH3
+[board_modifier.py:98]: Getting CH3 footprint position: (72000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED3 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED3 footprint position: (72000000, 29300000)
+[board_modifier.py:98]: Getting LED3 footprint position: (72000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH2
+[board_modifier.py:98]: Getting CH2 footprint position: (54000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED2 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED2 footprint position: (54000000, 29300000)
+[board_modifier.py:98]: Getting LED2 footprint position: (54000000, 29300000)
+[key_placer.py:774]: Placing additional elements for CH1
+[board_modifier.py:98]: Getting CH1 footprint position: (36000000, 34000000)
+[board_modifier.py:75]: Searching for optional LED1 footprint in C:/personalgit/lpkb/pcb/pcb.kicad_pcb
+[board_modifier.py:85]: Setting LED1 footprint position: (36000000, 29300000)
+[board_modifier.py:98]: Getting LED1 footprint position: (36000000, 29300000)
